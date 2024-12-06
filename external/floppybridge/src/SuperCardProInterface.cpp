@@ -30,6 +30,7 @@
 #include "SuperCardProInterface.h"
 #include "pll.h"
 #include "RotationExtractor.h"
+#include <sys/types.h>
 #ifdef _WIN32
 #include <winsock.h>
 #pragma comment(lib,"Ws2_32.lib")
