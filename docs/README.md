@@ -1,8 +1,8 @@
 # Amiberry with shallow "musl" patches
 
-Changes were made to make it compile on musl system like Alpine Linux. **Warning:** This is not intended for production, since these changes were made without deep understanding of the code. Using the [Flathub release](https://github.com/BlitterStudio/amiberry#linux) is recommended! (Or maybe use [Distrobox](https://github.com/89luca89/distrobox))
+Changes were made to make it compile on a musl system like Alpine Linux. **Warning:** This is not intended for production, since these changes were made without deep understanding of the code. Using the [Flathub release](https://github.com/BlitterStudio/amiberry#linux) is recommended! (Or maybe use [Distrobox](https://github.com/89luca89/distrobox))
 
-In order to compile it, you need to isntall the following packages in Alpine (Edge with [testing](https://wiki.alpinelinux.org/wiki/Repositories#Using_testing_repository) required):
+In order to compile it, you need to install the following packages in Alpine Linux (Edge repository with [testing](https://wiki.alpinelinux.org/wiki/Repositories#Using_testing_repository) required):
 ```
 apk add cmake git clang make sdl2-dev sdl2_ttf-dev sdl2_image-dev flac-dev mpg123-dev libmpeg2-dev libpng-dev portmidi-dev libserialport-dev@testing enet-dev
 ```
