@@ -65,6 +65,7 @@ DEFINE_GUID(GUID_DEVINTERFACE_COMPORT,0x86e0d1e0, 0x8089, 0x11d0, 0x9c, 0xe4, 0x
 #include <sys/stat.h>
 #include <dirent.h>
 #include <fcntl.h>
+#include <sys/time.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
 #include <errno.h>

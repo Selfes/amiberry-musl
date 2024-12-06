@@ -221,9 +221,9 @@ static int banshee_vga_vsync_enabled(banshee_t *banshee)
 static void banshee_update_irqs(banshee_t *banshee)
 {
     if (banshee->vblank_irq > 0 && banshee_vga_vsync_enabled(banshee)) {
-        pci_set_irq(NULL, PCI_INTA);
+        pci_set_irq((intptr_t)NULL, PCI_INTA);
     } else {
-        pci_clear_irq(NULL, PCI_INTA);
+        pci_clear_irq((intptr_t)NULL, PCI_INTA);
     }
 }
 

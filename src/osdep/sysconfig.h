@@ -618,8 +618,8 @@ typedef char TCHAR;
 #define _ftelli64(x)        ftello(x)
 #define _fseeki64(x,y,z)    fseeko(x,y,z)
 #else
-#define _ftelli64(x)        ftello64(x)
-#define _fseeki64(x,y,z)    fseeko64(x,y,z)
+#define _ftelli64(x)        ftello(x)
+#define _fseeki64(x,y,z)    fseeko(x,y,z)
 #endif
 #define _wunlink(x)         unlink(x)
 #define _istalnum(x)        isalnum(x)

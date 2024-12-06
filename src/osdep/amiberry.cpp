@@ -17,7 +17,7 @@
 #include <filesystem>
 
 #include <algorithm>
-#include <execinfo.h>
+//#include <execinfo.h>
 #include "sysdeps.h"
 #include "options.h"
 #include "audio.h"

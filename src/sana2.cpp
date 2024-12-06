@@ -1919,7 +1919,7 @@ void netdev_install (void)
 		write_log (_T("netdev_install(): 0x%x\n"), here ());
 
 	ethernet_enumerate_free ();
-	ethernet_enumerate (td, NULL);
+	ethernet_enumerate (td, (uintptr_t)NULL);
 
 	ROM_netdev_resname = ds (getdevname());
 	ROM_netdev_resid = ds (_T("UAE net.device 0.2"));

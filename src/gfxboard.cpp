@@ -408,7 +408,7 @@ static const struct gfxboard boards[] =
 		ROMTYPE_x86_VGA
 	},
 	{
-		NULL
+		0
 	}
 };
 
