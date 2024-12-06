@@ -1,3 +1,23 @@
+# Amiberry with shallow "musl" patches
+
+Changes were made to make it compile on musl system like Alpine Linux. **Warning:** This is not intended for production, since these changes were made without deep understanding of the code. Using the [Flathub release](https://github.com/BlitterStudio/amiberry#linux) is recommended! (Or maybe use [Distrobox](https://github.com/89luca89/distrobox))
+
+In order to compile it, you need to isntall the following packages in Alpine (Edge with [testing](https://wiki.alpinelinux.org/wiki/Repositories#Using_testing_repository) required):
+```
+apk add cmake git clang make sdl2-dev sdl2_ttf-dev sdl2_image-dev flac-dev mpg123-dev libmpeg2-dev libpng-dev portmidi-dev libserialport-dev@testing enet-dev
+```
+
+In order to compile it:
+```sh
+git clone https://github.com/Selfes/amiberry-musl.git
+cd amiberry-musl
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+cmake -B build && cmake --build build
+```
+
+---
+
 # Optimized Amiga emulator for multiple platforms
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X4FHDY4)
